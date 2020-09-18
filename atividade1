@@ -1,0 +1,210 @@
+#ATIVDADE PRATICA 1
+#Juliany Freitas Moura
+
+#Questão 1:
+x= 0
+y= -1
+z= 32
+#a
+a1= x+y+z
+a1 
+a2= y*z
+a2
+a3= z/y
+a3
+#b
+b1= z^2
+b1
+b2= z^3
+b2
+b3= z^x
+b3
+#c
+c1= sqrt(a1)
+c1
+c2= sqrt(x)
+c2
+c3= sqrt(b2/a1)
+c3
+#d
+d1= a2^(1/3)
+d1
+d2= (-1/a3)^(1/4)
+d2
+d3= z2^(1/3)
+d3
+#e
+e1= abs(x)
+e1
+e2= sqrt(abs(a2))
+e2
+e3= abs(1/z)
+e3
+#f
+f1= exp(abs(x))
+f1
+f2= exp(x+y+z)
+f2
+f3= exp(a3)
+f3
+#g
+g1= log(x)
+g1
+g2= log(x+y+z)
+g2
+g3= log(yz)
+g3
+#h
+h1= sqrt(pi)
+h1
+h2= sqrt(exp(-x^2))
+h2
+h3= sqrt(3log(4/a3))
+h3
+
+#Questão 2:
+ch1= "a"
+ch2= "b"
+ch3= "c"
+#a
+ch4= paste(ch1, ch2, ch3, sep=".")
+ch4
+#b
+ch5= paste(ch1, ch2, ch3, sep="")
+ch5
+#c
+ch4==ch5
+
+#Questão 3:
+#a
+18%%5
+(-5)%%2
+15%%5
+(8.3)%%3
+#b
+a= 5 #número para teste
+(a%%2)==0
+#c
+(a%%1)==0
+#d
+(((a%%1)==0)&& a>0)
+
+#Questão 4:
+a= seq(1:10)
+b= seq(1,20,by=2)
+d= seq(20,1,by=-2)
+#a
+x=c(b-d)
+x
+#b
+y=c(2*a)
+y
+#c
+z=c(a==b)
+z
+#d
+w=c(d>b)
+w
+
+
+#Questão 5:
+#a
+letters
+LETTERS
+#b
+class(letters)
+class(LETTERS)
+#c
+length(letters)
+length(LETTERS)
+#d
+a=c(LETTERS,letters)
+class(a)
+length(a)
+a
+#e
+b=paste(LETTERS,letters)
+class(b)
+length(b)
+b
+
+
+#Questão 6:
+#a
+m1= matrix(c(1,2,3,4,101,102,103,104),nrow = 4,ncol = 2,byrow =FALSE)
+m1
+#b
+m2= matrix(c(1,2,3,4,101,102,103,104),nrow = 2,ncol = 4,byrow =TRUE)
+m2
+#c
+m3= matrix(c(1,1,1,1,1,1,1,1,1),nrow = 3,ncol = 3,byrow =TRUE)
+m3
+
+
+#Questão 7:
+A= matrix(c(1,2,3,4,5,6,7,8,9,10,11,12),4,3)
+A
+nrow(A) #número de linhas
+ncol(A) #número de colunas
+
+
+#Questão 8:
+minha_lista= list("Juliany",21,c(1.56, 56), c(FALSE,TRUE,TRUE))
+#a
+minha_lista[[1]]
+#b
+minha_lista[[2]]
+#c
+minha_lista[[3]][1]
+#d
+minha_lista[[3]][2]
+#e
+minha_lista[[4]][3]
+
+
+#Questão 9:
+lista_2= list("Maria",25,c(1.66, 70), c(TRUE,TRUE,FALSE))
+dados_alunos= list(minha_lista,lista_2)
+#a
+dados_alunos[[1]][[1]]
+#b
+dados_alunos[[2]][[1]]
+#c
+dados_alunos[[1]][[3]][1]
+#d
+dados_alunos[[2]][[4]][1]
+
+
+#Questão 10:
+obj1= list(1,2,3) #uma lista com objetos
+obj2= list(c(1,2,3)) #uma lista de array
+obj3= c(1,2,3) #array, coleção de objetos e são obrigatoriamente do mesmo tipo
+
+
+#Questão 11:
+X= 3
+Y= 2 
+Z= "2"
+A= "X"
+B= X
+C= "A"
+D= paste(A,C)
+E= c(A,C)
+f= list(A,C)
+#a
+Y==Z
+#b
+A==B # FALSE POIS A É CHARACTER E B É NUMERIC
+#c
+X==B
+#d
+A==C  #FALSE POIS C É UM TEXTO(CHARACTER), NÃO OOBJETO A
+#e
+D==E==f #FALSE D é character, E é array e f é list
+class(A)
+class(B)
+class(C)
+class(D)
+class(E)
+class(f)
+
